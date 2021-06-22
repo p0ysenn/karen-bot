@@ -3,8 +3,8 @@ const clientBot = new Discord.Client();
 const token = "ODU3MDI0MTM0NjQyNTMyMzYy.YNJj7A.jT9I1oZxbuFnjugTaVbgzlC6Pc4";
 const prefix = "$";
 const adminPing = "<@!280703894269460490>";
-const ugurPing = "";
-var timeoutPing = "<@!246941907287015426>";
+const ugurPing = "<@!246941907287015426>";
+var timeoutPing = "";
 
 clientBot.on("ready", () => {
     console.log("Bot is online")
