@@ -1,0 +1,13 @@
+{
+    "discordJS": {
+        "token": "ODU3MDI0MTM0NjQyNTMyMzYy.YNJj7A.jT9I1oZxbuFnjugTaVbgzlC6Pc4",
+        "prefix": "$",
+        "adminID": "280703894269460490",
+        "ugurID": "246941907287015426"
+    },
+    "mongodb": {
+        "url": "mongodb+srv://Karen:karenbot@karencluster.nq0ag.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "database": "KarenBot",
+        "collection": "timeouts"
+    }
+}
