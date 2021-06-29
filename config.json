@@ -2,7 +2,15 @@
     "discordJS": {
         "prefix": "$",
         "adminID": "280703894269460490",
-        "ugurID": "246941907287015426"
+        "ugurID": "246941907287015426",
+        "commands": [
+            { "name": "$help", "value": "List aller Commands" },
+            { "name": "$hs", "value": "Ugur Beleidigen" },
+            { "name": "$timeout + User + Zeit in Sekunden", "value": "Hindert User daran für X Sekunden Nachrichten zu schreiben" },
+            { "name": "$list", "value": "Liste aller Timeouts" }, { "name": "$unban + User", "value": "Hebt Timeout auf" },
+            { "name": "$playlist", "value": "Spiel Krosse Krabbe 3 Playlist ab" }, { "name": "$reminder + Zeit", "value": "Errinere Mich in X Zeit an etwas" }
+        ],
+        "promts": ["Running KarenOS v1.2", "$help for all Commands", "So, typical day of failure, I see, huh darling?"]
     },
     "mongodb": {
         "url": "mongodb+srv://Karen:karenbot@karencluster.nq0ag.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
