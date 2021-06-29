@@ -10,15 +10,22 @@ var idList = [];
 
 const clientBot = new Discord.Client();
 
-clientBot.login(config.discordJS.token);
+MongoClient.connect(config.mongodb.url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db(config.mongodb.database);
+    dbo.collection("config").find().forEach(e => {
+        if (e.token != undefined) {
+            clientBot.login(e.token);
+        }
+    });
+});
 
 clientBot.on("ready", () => {
     console.log("Bot is online");
     MongoClient.connect(config.mongodb.url, function(err, db) {
         if (err) throw err;
         var dbo = db.db(config.mongodb.database);
-        var query = { bannedAt: { $gt: 1 } };
-        dbo.collection(config.mongodb.collection).find(query).forEach(e => {
+        dbo.collection(config.mongodb.collection).find().forEach(e => {
             idList.push(e);
         });
     });
